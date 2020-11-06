@@ -1,0 +1,23 @@
+{
+  "name": "roostertires",
+  "version": "1.0.0",
+  "description": "Official website of Rooster Tires",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass ./src/scss/main.scss ./public/css/main.css",
+    "sass-watch": "node-sass -w ./src/scss/main.scss ./public/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuolKuol/roostertires.git"
+  },
+  "author": "Kuol Kuol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KuolKuol/roostertires/issues"
+  },
+  "homepage": "https://github.com/KuolKuol/roostertires#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

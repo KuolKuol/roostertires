@@ -1,17 +1,15 @@
 <?php
 class Shop extends Controller{
 	
-	protected function Index(){
+
+	protected function tubes(){
 		$viewmodel = new ShopModel();
-		$this->returnView($viewmodel->Index(), true);
+		$this->returnView($viewmodel->tubes(), true);
 	}
 
-	protected function product($id){
-		if($id == 'index'){
-			header("Location: ". ROOT_URL."pagenotfound");
-		}
+	protected function tires($id){
 		$viewmodel = new ShopModel();
-		$this->returnView($viewmodel->product($id), true);
+		$this->returnView($viewmodel->tires($id), true);
 	}
 
 	protected function category($id){
@@ -20,6 +18,11 @@ class Shop extends Controller{
 		}
 		$viewmodel = new ShopModel();
 		$this->returnView($viewmodel->category($id), true);
+	}
+
+
+	protected function discipline(){
+		$this->returnView(NULL, true);
 	}
 
 }

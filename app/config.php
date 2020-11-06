@@ -2,11 +2,11 @@
 // Holds database credentials and other important constants
 
 // Define DB Params
-define("DB_HOST", "localhost");
-define("DB_USER", "rooster");
-define("DB_PASS", "rooster");
-define("DB_NAME", "roostertires");
+define("DB_HOST", "");
+define("DB_USER", "");
+define("DB_PASS", "");
+define("DB_NAME", "");
 
 // Define URL
 define("ROOT_PATH", "/");
-define("ROOT_URL", "http://localhost/portfolio/roostertires/");
+define("ROOT_URL", "");

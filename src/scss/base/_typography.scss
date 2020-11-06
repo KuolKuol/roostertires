@@ -1,0 +1,11 @@
+// GENERATE FONTFACE CSS TEMPLATE
+@mixin font($name, $url) {
+	@font-face {
+		font-family: '#{$name}';
+        src: url('#{$url}') format("truetype");
+        // users see a fallback font if custom font takes longer than 100ms to load
+        font-display: swap;
+    }
+}
+@include font("ethnoit","#{$rootUrl}/public/fonts/ethnocentric/ethnocentricrgit.ttf");
+@include font("ethno","#{$rootUrl}/public/fonts/ethnocentric/ethnocentricrg.ttf");

@@ -1,0 +1,28 @@
+.tires {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    .tire {
+        background-image: url('#{$rootUrl}/public/images/tires/motocross/MX2-Front-Tire-60-100-14.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color:whitesmoke;
+        display:block;
+        min-width:500px;
+        height:500px;
+    }
+
+    @include media($middle){
+        .tire {
+            flex:1;
+        }
+    }
+
+    @include media($small){
+        .tire {
+            flex:1;
+        }
+    }
+}

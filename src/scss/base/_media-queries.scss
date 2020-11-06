@@ -1,0 +1,57 @@
+// old small is 768 and old middle is 769
+// DEFINE BREAKPOINTS FOR DIFFERENT SCREEN SIZES 
+$small:767px;
+$medium:768px;
+
+// $middle:800;  FOR MEDIUM AND LARGE SCREENS 
+$middle:1000; // FOR MEDIUM AND LARGE SCREENS 
+$large:901px;
+
+// TEMPLATE THAT GENERATES MEDIA QUERY STRUCTURE
+@mixin media($size) {
+    @if $size == $small {
+        @media(max-width:1260px){
+            @content;
+        }
+    }
+
+    @else if $size == $medium {
+        @media(min-width:768px) and (max-width:900px){
+            @content;
+        }
+    }
+
+    @else if $size == $middle {
+        @media(min-width:1261px){
+            @content;
+        }
+    }
+
+    @else if $size == $large {
+        @media(min-width:901px){
+            @content;
+        }
+    }
+
+}
+
+
+// DEFINE BREAKPOINTS FOR DIFFERENT SCREEN SIZES 
+// $small:"(max-width:499px)";
+// $medium:"(min-width:500px) and (max-width:1000px)";
+// $large:"(min-width:1001px)";
+
+// // TEMPLATE THAT GENERATES MEDIA QUERY STRUCTURE
+// @mixin media($size) {
+//     @media(max-width:$size){
+//         @content;
+//     }
+// }
+
+
+// EXAMPLE 
+// @include media($small) {
+//     *{
+//         background-color: red;
+//     }
+// }

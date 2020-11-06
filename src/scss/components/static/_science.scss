@@ -1,0 +1,75 @@
+.science {
+    min-height:744px;
+    display: flex;
+    list-style-position:inside;
+    font-size: 2em;
+    font-family: 'Muli';
+    // background-image:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url('../../media/images/science-background.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('#{$rootUrl}/public/images/MX/DSC_0311.JPG') !important; 
+    background-color:black;
+    border:5px solid white;
+    background-size: contain;
+    background-repeat: repeat;
+    color:whitesmoke;
+    // margin-top:75px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        ol {
+            max-width: 400px;
+            li {
+                cursor: pointer;
+                padding:20px 0;
+                ul {
+                    li {
+                        padding:0;
+                        font-size: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu--left {
+        width: 35%;
+    }     
+
+    // C:\xampp\htdocs\rooster\assets\media\images\
+    .image {
+        width: 30%;
+        background-position: top center;
+        background-size: cover;
+        background-position-y:-40px;
+        max-height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scale:0.3 !important;
+        height:800px;
+    }
+
+
+
+    .menu--right {
+        width: 35%;
+    }
+
+    @include media($small){
+        display: none;
+    }
+
+    @include media($middle){
+        // display: none;
+
+    }
+}
+
+#tireImage {
+    // width: 100%;
+    height: 100%;
+}

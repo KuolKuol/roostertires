@@ -1,0 +1,68 @@
+.banner--thin {
+
+}
+
+.banner--top {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ethno';
+    padding-top: 75px;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),url('#{$rootUrl}/public/images/wesly1.JPG');
+    background-size: cover;
+    color:white;
+    text-align: center;
+    box-shadow: 0 0 8px 8px black inset;
+    background-attachment: fixed;
+
+
+   
+    @include media($small){
+        font-size: 3em;
+    }
+
+    @include media($middle){
+        font-size: 4em;
+
+    }
+}
+
+.banner--thin {
+
+}
+
+.banner--product{
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'muli';
+    background-size: cover;
+    color:white;
+    text-align: center;
+background: #fa4c06;
+margin-top:75px;
+
+
+   
+    @include media($small){
+        font-size: 1em;
+    }
+
+    @include media($middle){
+        font-size: 1em;
+
+    }
+}
+
+.banner--black {
+    background:black;
+    height: 75px;
+}
+
+.banner--product {
+    h1 {
+        display: none;
+    }
+}

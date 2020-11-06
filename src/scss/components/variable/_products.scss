@@ -1,0 +1,180 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    .product {
+        padding: 30px;
+        text-decoration: none;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        // background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../../media/images/trial-1.jpg');
+        font-size: 1.5em;
+        font-family: 'ethno';
+        color:white;
+        border:1px solid black;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        width: 50vw;
+        min-width: 400px;
+        min-width: 400px;
+        min-height:50vh;
+        flex:1;
+        
+        .product__name {
+            display: block;
+
+        }
+
+        .msrp {
+            display: block;
+            color:red;
+        }
+    }
+
+    
+    @include media($middle){
+
+    }
+
+    @include media($small){
+
+    }
+}
+
+
+.oem {
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.4)),url('#{$rootUrl}/public/images/1.4mm-OEM-Tube.png');
+}
+
+.heavy {
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.4)),url('#{$rootUrl}/public/images/2.5mm-Heavy-Duty-Tube.png');
+}
+
+.ultra {
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.4)),url('#{$rootUrl}/public/images/4.0mm-Ultra-Heavy-Duty-Tube.png');
+}
+
+.mx2-60-100-14 {
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/tires/60 100 14/6010014a.png');
+}
+
+.mx2-70-100-17 {
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/tires/70 100 17/7010017a.png');
+}
+.mx2-70-100-19 {
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/tires/70 100 17 (2)/7010017b.png');
+
+}
+.mx2-80-100-21 {
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/tires/80 100 21 X/8010021b.png');
+}
+.mx2-100-90-19 {
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/tires/110 90 19/1109019a.png');
+
+}
+.mx2-110-90-19 {
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/tires/110 90 19/1109019b.png');
+
+}
+.mx2-80-100-12 {
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/tires/80 100 12/8010012a.png');
+
+}
+.mx2-90-100-14 {
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/tires/90 100 16/9010016b.png');
+
+}
+.mx2-90-100-16 {
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/tires/90 100 16/9010016a.png');
+}
+
+.product-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: calc(100vh - 228px);
+    
+    flex-direction: column;
+    .xzoom-container {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction:column;
+        .xzoom {
+            margin:15px 0;
+        }
+        .xzoom-thumbs {
+            
+        }
+    }
+    
+    
+    @include media($middle){
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        flex-direction: row;
+
+        .xzoom-container {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction:row-reverse;
+            .xzoom {
+    
+            }
+            .xzoom-thumbs {
+                display: flex;
+                flex-direction: column;
+                margin:0px 15px;
+            }
+        }
+        
+    }
+
+    @include media($small){
+
+    }
+}
+
+
+.product-description {
+    max-width: 500px;
+    padding:30px;
+
+    .product-title {
+        color:#fa4c06;
+font-size: 40px;
+    }
+    .product-information {
+        .price {
+            
+        }
+        .size {
+
+        }
+
+        .description {
+
+        }
+    }
+
+    
+    @include media($small){
+
+    }
+    
+    @include media($middle){
+
+    }
+}
+
+.products .product {
+    min-height:60vh;
+}

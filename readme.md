@@ -1,8 +1,7 @@
 # Rooster Tires
-## Vanilla OOPHP MVC
 **Written By [Kuol Kuol](https://kuolkuol.com)**
 
-<img src="https://roostertires.com/assets/media/images/logo.png" data-canonical-src="https://roostertires.com/assets/media/images/logo.png" width="400"/>
+<img src="https://roostertires.com/public/images/logo.png" data-canonical-src="https://roostertires.com/public/images/logo.png" width="400"/>
 
 ## Table Of Contents:
 
@@ -15,6 +14,23 @@
   - [3. Folder  Structure](#3.-Folder-Structure)
   - [4. Naming conventions](#4.-Naming-conventions)
   - [5. Credits](#5.-Credits)
+
+
+## **Disclaimers**
+1. Database credentials, images, fonts, icons and all other sensitive information have been excluded from this repository for client confidentiality 
+2. A Sample MYSQL database named database.sql is included in the root directory
+
+## **Languages & Libraries**
+
+|Language / Library | Version 	|
+|------------	|---------	|
+| PHP        	| 7       	|
+| PHP Mailer 	| 6       	|
+| MYSQL 	    | 8       	|
+| Javascript 	| ES5     	|
+| JQuery     	| 3       	|
+| CSS & SASS  | 3       	|
+| XZOOM      	| 1        	|
 
 
 ## **1. Background information**

@@ -1,3 +1,1001 @@
-*{
-    background-color:whitesmoke;
-}
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+:root {
+  font-size: 16px; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif; }
+
+html, body {
+  margin: 0;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif; }
+
+.main {
+  scroll-snap-type: y mandatory; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: unset; }
+
+.container, .text-container {
+  margin: 0 auto;
+  max-width: 95%;
+  width: 80%; }
+
+@font-face {
+  font-family: "ethnoit";
+  src: url("https://roostertires.com/public/fonts/ethnocentric/ethnocentricrgit.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: "ethno";
+  src: url("https://roostertires.com/public/fonts/ethnocentric/ethnocentricrg.ttf") format("truetype");
+  font-display: swap; }
+
+.button {
+  display: inline-block;
+  padding: 10px 40px;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  min-width: 200px;
+  transform: skewX(-20deg); }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap; }
+  .boxes .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'ethno';
+    width: 50vw;
+    min-width: 400px;
+    min-height: 50vh;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 2em;
+    min-width: 400px;
+    flex: 1;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.415);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+.boxes--home .one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://roostertires.com/public/images/trial-1.jpg"); }
+
+.boxes--home .two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://roostertires.com/public/images/trial-2.jpg"); }
+
+.boxes--tires .box--motocross {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/18029578.jpg");
+  background-size: cover; }
+
+.boxes--tires .box--enduro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/roostertires.com-4219107161271249.jpg");
+  background-size: cover; }
+
+.boxes--tires .box--trials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/trial-2.jpg");
+  background-size: cover; }
+
+.boxes--tires .box--adventure {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/trial-1.jpg");
+  background-size: cover; }
+
+.boxes--products {
+  box-sizing: border-box; }
+  .boxes--products .box--tire {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://roostertires.com/public/images/motorbike.jpg");
+    background-size: cover; }
+  .boxes--products .box--tube {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://roostertires.com/public/images/trial-2.jpg");
+    background-size: cover; }
+
+.riders {
+  background-color: black;
+  display: grid;
+  color: white;
+  grid-gap: 10px;
+  padding: 0px 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .riders .rider .rider-image img {
+    width: 90%; }
+
+.banner--top {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'ethno';
+  padding-top: 75px;
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0.7)), url("https://roostertires.com/public/images/wesly1.JPG");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 8px 8px black inset;
+  background-attachment: fixed; }
+  @media (max-width: 1260px) {
+    .banner--top {
+      font-size: 3em; } }
+  @media (min-width: 1261px) {
+    .banner--top {
+      font-size: 4em; } }
+
+.banner--product {
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'muli';
+  background-size: cover;
+  color: white;
+  text-align: center;
+  background: #fa4c06;
+  margin-top: 75px; }
+  @media (max-width: 1260px) {
+    .banner--product {
+      font-size: 1em; } }
+  @media (min-width: 1261px) {
+    .banner--product {
+      font-size: 1em; } }
+
+.banner--black {
+  background: black;
+  height: 75px; }
+
+.banner--product h1 {
+  display: none; }
+
+.cta {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  flex-direction: column;
+  padding: 100px 0; }
+  .cta .heading {
+    font-size: 2em;
+    font-family: 'ethno'; }
+  .cta .paragraph {
+    margin-top: 10px;
+    max-width: 1000px;
+    text-align: center; }
+  @media (max-width: 1260px) {
+    .cta {
+      min-height: 200px;
+      padding: 100px 20px; }
+      .cta .heading {
+        font-size: 2em;
+        font-family: 'ethno'; }
+      .cta .paragraph {
+        margin-top: 10px; } }
+
+.tires {
+  display: flex;
+  flex-wrap: wrap; }
+  .tires .tire {
+    background-image: url("https://roostertires.com/public/images/tires/motocross/MX2-Front-Tire-60-100-14.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: whitesmoke;
+    display: block;
+    min-width: 500px;
+    height: 500px; }
+  @media (min-width: 1261px) {
+    .tires .tire {
+      flex: 1; } }
+  @media (max-width: 1260px) {
+    .tires .tire {
+      flex: 1; } }
+
+.text-container {
+  min-height: 35vh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em; }
+  @media (max-width: 1260px) {
+    .text-container {
+      padding: 40px;
+      width: 100%; } }
+
+.text-container--sponsorship {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between; }
+  .text-container--sponsorship .text-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 450px;
+    padding-bottom: 50px; }
+    .text-container--sponsorship .text-group .text-heading {
+      font-size: 2em; }
+
+.products {
+  display: flex;
+  flex-wrap: wrap; }
+  .products .product {
+    padding: 30px;
+    text-decoration: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 1.5em;
+    font-family: 'ethno';
+    color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 50vw;
+    min-width: 400px;
+    min-width: 400px;
+    min-height: 50vh;
+    flex: 1; }
+    .products .product .product__name {
+      display: block; }
+    .products .product .msrp {
+      display: block;
+      color: red; }
+
+.oem {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)), url("https://roostertires.com/public/images/1.4mm-OEM-Tube.png"); }
+
+.heavy {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)), url("https://roostertires.com/public/images/2.5mm-Heavy-Duty-Tube.png"); }
+
+.ultra {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4)), url("https://roostertires.com/public/images/4.0mm-Ultra-Heavy-Duty-Tube.png"); }
+
+.mx2-60-100-14 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/tires/60 100 14/6010014a.png"); }
+
+.mx2-70-100-17 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/tires/70 100 17/7010017a.png"); }
+
+.mx2-70-100-19 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/tires/70 100 17 (2)/7010017b.png"); }
+
+.mx2-80-100-21 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/tires/80 100 21 X/8010021b.png"); }
+
+.mx2-100-90-19 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/tires/110 90 19/1109019a.png"); }
+
+.mx2-110-90-19 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/tires/110 90 19/1109019b.png"); }
+
+.mx2-80-100-12 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/tires/80 100 12/8010012a.png"); }
+
+.mx2-90-100-14 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/tires/90 100 16/9010016b.png"); }
+
+.mx2-90-100-16 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url("https://roostertires.com/public/images/tires/90 100 16/9010016a.png"); }
+
+.product-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: calc(100vh - 228px);
+  flex-direction: column; }
+  .product-page .xzoom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .product-page .xzoom-container .xzoom {
+      margin: 15px 0; }
+  @media (min-width: 1261px) {
+    .product-page {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100%;
+      flex-direction: row; }
+      .product-page .xzoom-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse; }
+        .product-page .xzoom-container .xzoom-thumbs {
+          display: flex;
+          flex-direction: column;
+          margin: 0px 15px; } }
+
+.product-description {
+  max-width: 500px;
+  padding: 30px; }
+  .product-description .product-title {
+    color: #fa4c06;
+    font-size: 40px; }
+
+.products .product {
+  min-height: 60vh; }
+
+.product-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center; }
+  .product-container .product-info {
+    max-width: 500px; }
+    .product-container .product-info .product__title {
+      font-size: 1.2em; }
+    .product-container .product-info .price {
+      font-weight: 600; }
+
+.customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%; }
+
+.customers td, .customers th {
+  border: 1px solid #ddd;
+  padding: 8px; }
+
+.customers tr:nth-child(even) {
+  background-color: #f2f2f2; }
+
+.ccustomers tr:hover {
+  background-color: #ddd; }
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fa4c06;
+  color: white; }
+
+.header-group {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999; }
+  .header-group .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 44px;
+    font-size: 1em; }
+    .header-group .banner .heading {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-weight: 700; }
+  .header-group .header {
+    background: black;
+    box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.05); }
+    .header-group .header .header__heading .logo .logo__link .logo__image {
+      width: 225px; }
+    .header-group .header .nav {
+      font-size: 0.8em;
+      font-family: 'ethno', sans-serif; }
+      .header-group .header .nav .nav__list .nav__item .nav__link {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase; }
+    @media (max-width: 1260px) {
+      .header-group .header a {
+        display: block !important; }
+      .header-group .header .header__heading {
+        background: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px; }
+        .header-group .header .header__heading .hamburgerIcon {
+          background: rgba(255, 166, 0, 0.8);
+          height: 100%;
+          width: 10%;
+          width: 80px;
+          height: 75px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .header-group .header .header__heading .hamburgerIcon img {
+            height: 35%;
+            width: 35%; }
+          .header-group .header .header__heading .hamburgerIcon .logo {
+            padding-left: 50px; }
+      .header-group .header #nav {
+        display: none;
+        background: black; }
+        .header-group .header #nav .nav__list .nav__item .nav__link {
+          padding: 20px;
+          border-top: 1px solid white; }
+          .header-group .header #nav .nav__list .nav__item .nav__link .dropdown {
+            display: none !important; } }
+    @media (min-width: 1261px) {
+      .header-group .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px; }
+        .header-group .header .header__heading {
+          padding: 0px 20px; }
+          .header-group .header .header__heading .hamburgerIcon {
+            display: none; }
+        .header-group .header .nav {
+          display: flex;
+          height: 100%; }
+          .header-group .header .nav .nav__list {
+            display: flex;
+            height: 100%; }
+            .header-group .header .nav .nav__list .nav__item {
+              height: 100%; }
+              .header-group .header .nav .nav__list .nav__item .nav__link {
+                padding: 0px 20px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center; }
+              .header-group .header .nav .nav__list .nav__item:last-child .nav__link {
+                background: #001b4c; }
+              .header-group .header .nav .nav__list .nav__item:hover {
+                background: #001b4c; }
+              .header-group .header .nav .nav__list .nav__item .dropdown {
+                display: none;
+                text-align: center; }
+                .header-group .header .nav .nav__list .nav__item .dropdown .dropdown__nav__item .dropdown__nav__link {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: #002466;
+                  color: black;
+                  text-decoration: none;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 20px 20px;
+                  color: white; }
+                .header-group .header .nav .nav__list .nav__item .dropdown .dropdown__nav__item .active-tube {
+                  background: #001241; }
+              .header-group .header .nav .nav__list .nav__item:hover > .dropdown {
+                display: block; } }
+
+.open {
+  display: block !important; }
+
+@media (max-width: 1260px) {
+  .dropdown {
+    display: none; }
+  .nav__link:active .dropdown {
+    display: block; } }
+
+.footer {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  padding: 0px 20px; }
+  .footer .footer__logo {
+    width: 200px; }
+  .footer .copyright {
+    color: white; }
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://roostertires.com/public/images/MX/515.png");
+  background-size: cover;
+  height: calc(100vh);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'ethno','Muli';
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  .hero .hero__content .heading--large {
+    font-size: 72px;
+    font-weight: 900;
+    font-style: italic;
+    margin: 0;
+    line-height: 1em;
+    font-family: 'ethno','Muli'; }
+  .hero .hero__content .heading--small {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px;
+    transform: skewX(-10deg); }
+  .hero .hero__content .button-group {
+    font-family: 'Muli'; }
+  @media (max-width: 1260px) {
+    .hero .hero__content {
+      padding: 20px; }
+      .hero .hero__content img {
+        height: 45px; }
+      .hero .hero__content .heading--large {
+        font-size: 2.3em; }
+      .hero .hero__content .heading--small {
+        font-size: 1em;
+        font-weight: 300; } }
+  @media (min-width: 1261px) {
+    .hero .hero__content img {
+      height: 70px; }
+    .hero .hero__content .heading--large {
+      font-size: 72px; }
+    .hero .hero__content .heading--small {
+      font-size: 20px;
+      margin-top: 0px; } }
+
+.hero-sci {
+  display: none; }
+  @media (max-width: 1260px) {
+    .hero-sci {
+      display: flex; } }
+
+@media (max-width: 992px) {
+  .container, .text-container {
+    width: 100%;
+    max-width: 100%; } }
+
+.science {
+  min-height: 744px;
+  display: flex;
+  list-style-position: inside;
+  font-size: 2em;
+  font-family: 'Muli';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://roostertires.com/public/images/MX/DSC_0311.JPG") !important;
+  background-color: black;
+  border: 5px solid white;
+  background-size: contain;
+  background-repeat: repeat;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; }
+  .science .menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+    .science .menu ol {
+      max-width: 400px; }
+      .science .menu ol li {
+        cursor: pointer;
+        padding: 20px 0; }
+        .science .menu ol li ul li {
+          padding: 0;
+          font-size: 0.5em; }
+  .science .menu--left {
+    width: 35%; }
+  .science .image {
+    width: 30%;
+    background-position: top center;
+    background-size: cover;
+    background-position-y: -40px;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 0.3 !important;
+    height: 800px; }
+  .science .menu--right {
+    width: 35%; }
+  @media (max-width: 1260px) {
+    .science {
+      display: none; } }
+
+#tireImage {
+  height: 100%; }
+
+.main {
+  flex: 1;
+  width: 100%;
+  height: 100%; }

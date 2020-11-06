@@ -11,9 +11,4 @@ class Sponsorship extends Controller{
 		$this->returnView($viewmodel->roosters(), true);
 	}
 
-	protected function application(){
-		$viewmodel = new SponsorshipModel();
-		$this->returnView($viewmodel->application(), true);
-	}
-
 }

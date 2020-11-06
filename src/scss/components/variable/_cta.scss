@@ -1,0 +1,44 @@
+.cta {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+    color:white;
+    flex-direction: column;
+    padding:100px 0;
+
+    .heading {
+        font-size: 2em;
+        font-family: 'ethno'
+
+    }
+
+    .paragraph {
+        margin-top:10px;
+        max-width: 1000px;
+        text-align: center;
+    }
+
+    @include media($small){
+        min-height: 200px;
+        padding:100px 20px;
+    
+        .heading {
+            font-size: 2em;
+            font-family: 'ethno'
+    
+        }
+        
+        .paragraph {
+            margin-top:10px;
+           
+        }
+        
+    }
+
+    @include media($middle){
+
+    }
+
+}

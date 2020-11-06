@@ -1,0 +1,36 @@
+.product-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+
+    .gallary-container {
+
+        .small-img {
+
+        }
+
+    }
+
+    .product-info {
+        max-width: 500px;
+
+        .product__title {
+            font-size:1.2em;
+        }
+        .price {
+            font-weight: 600;
+        }
+
+        
+    }
+
+    
+    
+    @include media($middle){
+
+    }
+
+    @include media($small){
+
+    }
+}

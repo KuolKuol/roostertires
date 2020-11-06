@@ -1,0 +1,135 @@
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        font-family: 'ethno';
+        width: 50vw;
+        min-width: 400px;
+        min-height:50vh;
+        flex:1;
+        // background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../../media/images/wesly1.JPG');
+        background-position: center;
+        background-size: cover;
+        color:white;
+        font-size: 2em;
+        min-width: 400px;
+        flex:1;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.415);
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+        
+    }
+}
+
+
+.boxes--home {
+
+    .one {
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('#{$rootUrl}/public/images/trial-1.jpg');
+    }
+
+    .two {
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('#{$rootUrl}/public/images/trial-2.jpg');
+    }
+
+}
+
+.boxes--tires {
+    
+    .box--motocross {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/18029578.jpg');
+        background-size: cover;
+
+
+    }
+    .box--enduro {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/roostertires.com-4219107161271249.jpg');
+        background-size: cover;
+
+
+    }
+    .box--trials {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/trial-2.jpg');
+        background-size: cover;
+
+
+    }
+    .box--adventure {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('#{$rootUrl}/public/images/trial-1.jpg');
+        background-size: cover;
+
+
+    }
+}
+
+.boxes--products {
+    box-sizing: border-box;
+
+    .box--tire {
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('#{$rootUrl}/public/images/motorbike.jpg');
+
+        background-size: cover;
+
+
+    }
+
+    .box--tube {
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('#{$rootUrl}/public/images/trial-2.jpg');
+
+        background-size: cover;
+
+    }
+}
+
+
+
+
+
+
+.riders {
+    background-color: black;
+    display: grid;
+    color: white;
+    // grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    padding: 0px 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    .rider {
+        .rider-image {
+            img {
+                width: 90%;
+            }
+        }
+
+        .rider-description {
+            .info {
+                .number {
+
+                }
+                .name {
+
+                }
+            }
+            .class {
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

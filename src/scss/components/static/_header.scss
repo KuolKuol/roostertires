@@ -1,0 +1,216 @@
+.header-group {
+    position: fixed;
+    top:0px;
+    width:100%;
+    z-index: 999;
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        // background: transparent;
+
+
+
+        height: 44px;
+        font-size:1em;
+        .heading {
+            display: block;
+            color:white;
+            text-decoration: none;
+            font-weight: 700;
+            // border-bottom: 2px solid white;
+        }
+    }
+    .header {
+        // STYLES FOR ALL SCREEN SIZES
+        background:rgba(0, 0, 0, 1);
+        // background: transparent;
+        box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,0.05);
+        .header__heading {
+            
+            .hamburgerIcon {
+    
+            }
+            .logo {
+                .logo__link {
+                    .logo__image {
+                        width:225px;
+                    }
+                }
+            }
+        }
+        
+        .nav {
+            font-size: 0.8em;
+
+            font-family: 'ethno', sans-serif;
+            .nav__list {
+                .nav__item {
+                    .nav__link {
+                        color:white;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    
+        // STYLES FOR SMALL SCREEN SIZES
+        @include media($small){
+            a {
+                // padding:50px 0px !important;
+                display: block !important;
+            }
+    
+            .header__heading {
+                background: black;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                .hamburgerIcon {
+                    background: rgba(255, 166, 0, 0.8);
+                    height: 100%;
+                    width:10%;
+                    width:80px;
+                    height:75px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        height: 35%;
+                        width:35%;
+                    }
+                    
+                    .logo {
+                        padding-left: 50px; 
+                        .logo__link {
+                            .logo__image {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+    
+            #nav {
+                display: none;
+                background: black;
+
+                .nav__list {
+                    .nav__item {
+                        .nav__link {
+                            padding:20px;
+                            border-top: 1px solid white;
+                            .dropdown {
+                                display: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    
+        // STYLES FOR LARGE SCREEN SIZES
+        @include media($middle){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 75px;
+            
+  
+
+            .header__heading {
+                padding:0px 20px;  
+                .hamburgerIcon {
+                    display: none;
+                    .logo {
+                        .logo__link {
+                            .logo__image {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .nav {
+                display: flex;
+                height: 100%;
+                .nav__list {
+                    display: flex;
+                    height: 100%;
+                    .nav__item {
+                        height: 100%;
+
+                        .nav__link {
+                            padding:0px 20px;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            justify-content: center;
+                        }
+
+                        &:last-child .nav__link {
+                            background: #001b4c;
+                            // background: transparent;
+                        }
+
+                        &:hover {
+                            background:#001b4c;
+                        }
+
+                        .dropdown {
+                            display: none;
+                            text-align: center;
+                            .dropdown__nav__item {
+                                .dropdown__nav__link {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background: #002466;
+                                    color:black;
+                                    text-decoration: none;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding:20px 20px;
+                                    color: white;
+                                 
+                                }
+                                .active-tube {
+                                    background:#001241;
+                                }
+                            }
+                        }
+                                 
+                    
+                        &:hover > .dropdown {
+                            display: block;
+                        }
+
+                    }
+                }
+            }
+    
+        }
+    }
+}
+.open {
+    display: block !important;
+}
+
+@include media($small){
+    .dropdown {
+        display: none;
+    }
+    .nav__link:active .dropdown {
+
+        display: block;
+    }
+}

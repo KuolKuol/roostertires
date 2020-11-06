@@ -64,7 +64,10 @@ abstract class Controller{
 	 */
 
 	protected function returnView($viewmodel, $fullview){
-		$view = 'app/views/'. get_class($this). '/' . $this->action. '.php';
+		
+		// converted to lower because views file names are in lower case
+		$view = strtolower('app/views/'. get_class($this). '/' . $this->action. '.php');
+		
 		if($fullview){
 			
 			/**
