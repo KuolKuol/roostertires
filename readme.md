@@ -1,7 +1,7 @@
 # Rooster Tires
 
 **Written By [Kuol Kuol](https://kuolkuol.com)**  \
-<a href="https://roostertires.com/" target="_blank">Live Preview Of Website</a>
+[Live Preview of Website](https://roostertires.com/)
 
 <img src="https://roostertires.com/public/images/logo.png" data-canonical-src="https://roostertires.com/public/images/logo.png" width="400"/>
 
