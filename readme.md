@@ -27,7 +27,7 @@
 | PHP        	| 7       	|
 | PHP Mailer 	| 6       	|
 | MYSQL 	    | 8       	|
-| Javascript 	| ES5     	|
+| Javascript 	| ES6     	|
 | JQuery     	| 3       	|
 | CSS & SASS  | 3       	|
 | XZOOM      	| 1        	|
