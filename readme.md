@@ -3,7 +3,6 @@
 **Written By [Kuol Kuol](https://kuolkuol.com)**  \
 <a href="https://roostertires.com/" target="_blank">Live Preview Of Website</a>
 
-
 <img src="https://roostertires.com/public/images/logo.png" data-canonical-src="https://roostertires.com/public/images/logo.png" width="400"/>
 
 ## Table Of Contents:
